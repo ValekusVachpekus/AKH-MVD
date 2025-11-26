@@ -197,7 +197,6 @@ GUI, ADD, TEXT,,       Alt+8              	    Пропуск спец.тран�
 GUI, ADD, TEXT,,       Alt+9              	    СГУ
 GUI, ADD, TEXT,,       Numpad0                /chase
 GUI, ADD, TEXT,,       Numpad1                /frac
-GUI, ADD, TEXT,,       Numpad2                пробив по ID
 GUI, ADD, TEXT,,       !деп            	   Депортамент
 GUI, ADD, TEXT,,       !су                            Выдать розыск
 GUI, ADD, TEXT,,       !ш                             Штраф
@@ -390,7 +389,7 @@ help2() {
             break
         }
         if GetKeyState("5", "P") {
-            addChatMessageEx(0xFFFFFF, "{94f8ff} AHK_FSB {176114}> {ffffff}Помощь закрыта")
+            addChatMessageEx(0xFFFFFF, "{94f8ff} AHK_MVD {176114}> {ffffff}Помощь закрыта")
             return
         }
     }
@@ -400,11 +399,11 @@ help2() {
 help1() {
 
 
-    addChatMessageEx(0xFFFFFF, "{94f8ff} AHK_FSB {176114}> {ffffff} Нажмите на кнопку {94f8ff}1{ffffff}, чтобы увидеть {94f8ff}горячие клавиши")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} AHK_FSB {176114}> {ffffff} Нажмите на кнопку {94f8ff}2{ffffff}, чтобы увидеть {94f8ff}отыгровки")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} AHK_FSB {176114}> {ffffff} Нажмите на кнопку {94f8ff}3{ffffff}, чтобы увидеть {94f8ff}доклады")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} AHK_FSB {176114}> {ffffff} Нажмите на кнопку {94f8ff}4{ffffff}, чтобы увидеть {94f8ff}автоматический функционал")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} AHK_FSB {176114}> {ffffff} Нажмите на кнопку {ff2428}5{ffffff}, для {94f8ff}отмены действия")
+    addChatMessageEx(0xFFFFFF, "{94f8ff} AHK_MVD {176114}> {ffffff} Нажмите на кнопку {94f8ff}1{ffffff}, чтобы увидеть {94f8ff}горячие клавиши")
+    addChatMessageEx(0xFFFFFF, "{94f8ff} AHK_MVD {176114}> {ffffff} Нажмите на кнопку {94f8ff}2{ffffff}, чтобы увидеть {94f8ff}отыгровки")
+    addChatMessageEx(0xFFFFFF, "{94f8ff} AHK_MVD {176114}> {ffffff} Нажмите на кнопку {94f8ff}3{ffffff}, чтобы увидеть {94f8ff}доклады")
+    addChatMessageEx(0xFFFFFF, "{94f8ff} AHK_MVD {176114}> {ffffff} Нажмите на кнопку {94f8ff}4{ffffff}, чтобы увидеть {94f8ff}автоматический функционал")
+    addChatMessageEx(0xFFFFFF, "{94f8ff} AHK_MVD {176114}> {ffffff} Нажмите на кнопку {ff2428}5{ffffff}, для {94f8ff}отмены действия")
     help2()
     Return
 
@@ -412,7 +411,7 @@ help1() {
 
 showHotkeys() {
     addChatMessageEx(0xFFFFFF, "                   ")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} AHK_FSB {176114}> {ffffff} Ниже перечислены все {94f8ff}горячие клавиши")
+    addChatMessageEx(0xFFFFFF, "{94f8ff} AHK_MVD {176114}> {ffffff} Ниже перечислены все {94f8ff}горячие клавиши")
     addChatMessageEx(0xFFFFFF, "{94f8ff} ALT + 1 {176114}> {ffffff} Ввести {94f8ff}ID{ffffff}  подозреваемого")
     addChatMessageEx(0xFFFFFF, "{94f8ff} ALT + 2 {176114}> {ffffff} Представиться")
     addChatMessageEx(0xFFFFFF, "{94f8ff} ALT + 3 {176114}> {ffffff} Начать преследование за {94f8ff}подозреваемым{ffffff}")
@@ -424,9 +423,6 @@ showHotkeys() {
     addChatMessageEx(0xFFFFFF, "{94f8ff} ALT + 9 {176114}> {ffffff} {94f8ff}Вкл{ffffff}/{94f8ff}выкл{ffffff} проблесковые маячки")
     addChatMessageEx(0xFFFFFF, "{94f8ff} Numpad0 {176114}> {ffffff} Открыть окно {94f8ff}преследования{ffffff}")
     addChatMessageEx(0xFFFFFF, "{94f8ff} Numpad1 {176114}> {ffffff} /frac на {94f8ff}подозреваемого{ffffff}")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} Numpad2 {176114}> {ffffff} Пробить местоположение по {94f8ff}ID{ffffff}")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} ALT + Numpad3 {176114}> {ffffff} Ввести текст команды")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} Numpad3 {176114}> {ffffff} Отправить команду")
     addChatMessageEx(0xFFFFFF, "{94f8ff} Numpad4 {176114}> {ffffff} Оплатить все {94f8ff}штрафы{ffffff} (Госуслуги)")
     addChatMessageEx(0xFFFFFF, "{94f8ff} !X {176114}> {ffffff} Открыть быстрое меню помощи")
     addChatMessageEx(0xFFFFFF, "                   ")
@@ -436,25 +432,18 @@ showHotkeys() {
 
 showOtigrovki() {
     addChatMessageEx(0xFFFFFF, "                   ")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} AHK_FSB {176114}> {ffffff} Ниже перечислены все {94f8ff}отыгровки")
+    addChatMessageEx(0xFFFFFF, "{94f8ff} AHK_MVD {176114}> {ffffff} Ниже перечислены все {94f8ff}отыгровки")
     addChatMessageEx(0xFFFFFF, "{94f8ff} !права {176114}> {ffffff} Зачитать {94f8ff}права{ffffff} задержанному")
     addChatMessageEx(0xFFFFFF, "{94f8ff} !эв {176114}> {ffffff} Прицепить авто на {94f8ff}эвакуатор{ffffff}")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} !уд {176114}> {ffffff} Показать {94f8ff}жетон{ffffff} сотрудника УФСБ")
     addChatMessageEx(0xFFFFFF, "{94f8ff} !м {176114}> {ffffff} Надеть маску + сбросить")
     addChatMessageEx(0xFFFFFF, "{94f8ff} !ар {176114}> {ffffff} Передать задержанного дежурному")
     addChatMessageEx(0xFFFFFF, "{94f8ff} !ш {176114}> {ffffff} Выписать штраф {94f8ff}(КД 30 сек)")
+    addChatMessageEx(0xFFFFFF, "{94f8ff} !шук {176114}> {ffffff} Выписать уголовный штраф {94f8ff}(Автоматически)")
     addChatMessageEx(0xFFFFFF, "{94f8ff} !су {176114}> {ffffff} Выдать розыск {94f8ff}(КД 20 сек)")
     addChatMessageEx(0xFFFFFF, "{94f8ff} !пр {176114}> {ffffff} Заполнить протокол задержания")
     addChatMessageEx(0xFFFFFF, "{94f8ff} !визиткадс {176114}> {ffffff} Дать визитку {94f8ff}(Discord)")
     addChatMessageEx(0xFFFFFF, "{94f8ff} !визиткавк {176114}> {ffffff} Дать визитку {94f8ff}(VK)")
     addChatMessageEx(0xFFFFFF, "{94f8ff} !камера {176114}> {ffffff} Включение нагрудной {94f8ff}камеры")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} !блокнот {176114}> {ffffff} Записать что-то в {94f8ff}блокнот")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} !ешка {176114}> {ffffff} Характеристики {94f8ff}автомобиля")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} !очки/!очки1 {176114}> {ffffff} Надеть/снять {94f8ff}очки")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} !кофе/!кофе1 {176114}> {ffffff} Начать/пить {94f8ff}кофе")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} !сигарета {176114}> {ffffff} Курить {94f8ff}сигарету")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} !карта {176114}> {ffffff} Карта {94f8ff}Нижегородской области")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} !апс {176114}> {ffffff} Осмотреть {94f8ff}АПС")
     addChatMessageEx(0xFFFFFF, "{94f8ff} !ву {176114}> {ffffff} Открыть подсказки по {94f8ff}ВУ")
     addChatMessageEx(0xFFFFFF, "{94f8ff} !фп {176114}> {ffffff} Открыть подсказки по {94f8ff}ФП")
     addChatMessageEx(0xFFFFFF, "{94f8ff} PgUp/PgDn {176114}> {ffffff} Листать подсказки {94f8ff}ФП{ffffff}/{94f8ff}ВУ")
@@ -465,19 +454,16 @@ showOtigrovki() {
 
 showDoklady() {
     addChatMessageEx(0xFFFFFF, "                   ")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} AHK_FSB {176114}> {ffffff} Ниже перечислены все {94f8ff}доклады")
+    addChatMessageEx(0xFFFFFF, "{94f8ff} AHK_MVD {176114}> {ffffff} Ниже перечислены все {94f8ff}доклады")
     addChatMessageEx(0xFFFFFF, "{94f8ff} !деп {176114}> {ffffff} Выйти в {94f8ff}депортамент{ffffff}")
     addChatMessageEx(0xFFFFFF, "{94f8ff} !сос {176114}> {ffffff} Выезд на вызов {94f8ff}SOS{ffffff}")
     addChatMessageEx(0xFFFFFF, "{94f8ff} !сос1 {176114}> {ffffff} Прибытие на вызов {94f8ff}SOS{ffffff}")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} !смс {176114}> {94f8ff}Начало{ffffff} прослушки {94f8ff}SMS{ffffff}")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} !смс1 {176114}> {94f8ff}Продолжение{ffffff} прослушки {94f8ff}SMS{ffffff}")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} !смс2 {176114}> {94f8ff}Завершение{ffffff} прослушки {94f8ff}SMS{ffffff}")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} !прослушка {176114}> {94f8ff}Начало{ffffff} прослушки {94f8ff}ЧОП{ffffff}")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} !прослушка1 {176114}> {94f8ff}Продолжение{ffffff} прослушки {94f8ff}ЧОП{ffffff}")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} !прослушка2 {176114}> {94f8ff}Завершение{ffffff} прослушки {94f8ff}ЧОП{ffffff}")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} !внедрение {176114}> {94f8ff}Начало{ffffff} внедрения в {94f8ff}ЧОП{ffffff}")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} !внедрение1 {176114}> {94f8ff}Продолжение{ffffff} внедрения в {94f8ff}ЧОП{ffffff}")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} !внедрение2 {176114}> {94f8ff}Завершение{ffffff} внедрения в {94f8ff}ЧОП{ffffff}")
+    addChatMessageEx(0xFFFFFF, "{94f8ff} !пост {176114}> {94f8ff}Начало{ffffff} {94f8ff}поста{ffffff}")
+    addChatMessageEx(0xFFFFFF, "{94f8ff} !пост1 {176114}> {94f8ff}Продолжение{ffffff} {94f8ff}поста{ffffff}")
+    addChatMessageEx(0xFFFFFF, "{94f8ff} !пост2 {176114}> {94f8ff}Завершение{ffffff} {94f8ff}поста {ffffff}")
+    addChatMessageEx(0xFFFFFF, "{94f8ff} !патруль {176114}> {94f8ff}Начало{ffffff} {94f8ff}патруля{ffffff}")
+    addChatMessageEx(0xFFFFFF, "{94f8ff} !патруль1 {176114}> {94f8ff}Продолжение{ffffff} {94f8ff}патруля{ffffff}")
+    addChatMessageEx(0xFFFFFF, "{94f8ff} !патруль2 {176114}> {94f8ff}Завершение{ffffff} {94f8ff}патруля{ffffff}")
     addChatMessageEx(0xFFFFFF, "{94f8ff} !угон {176114}> {ffffff} Выезд на угон авто")
     addChatMessageEx(0xFFFFFF, "{94f8ff} !угон1 {176114}> {ffffff} Прибытие на угон авто")
     addChatMessageEx(0xFFFFFF, "{94f8ff} !вк {176114}> {94f8ff}Начало{ffffff} сопровождения колонны")
@@ -490,7 +476,7 @@ showDoklady() {
 
 showAutoFunctions() {
     addChatMessageEx(0xFFFFFF, "                   ")
-    addChatMessageEx(0xFFFFFF, "{94f8ff} AHK_FSB {176114}> {ffffff} Ниже перечислены весь {94f8ff}автоматический функционал")
+    addChatMessageEx(0xFFFFFF, "{94f8ff} AHK_MVD {176114}> {ffffff} Ниже перечислены весь {94f8ff}автоматический функционал")
     addChatMessageEx(0xFFFFFF, "{94f8ff} Пробив ООП {176114}> {ffffff} Автопробив {94f8ff}ID{ffffff} при запросе местоположения")
     addChatMessageEx(0xFFFFFF, "{94f8ff} Тазер/дубинка {176114}> {ffffff} Запрос {94f8ff}ID{ffffff} при оглушении игрока")
     addChatMessageEx(0xFFFFFF, "{94f8ff} Сигнализация дома {176114}> {ffffff} Предложение отметить {94f8ff}дом{ffffff} на {94f8ff}GPS{ffffff}")
