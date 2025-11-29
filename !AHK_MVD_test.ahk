@@ -2,20 +2,23 @@
 #Include helperMVD_test.ahk
 #CommentFlag
 
-// way - путь до папки игры\amazing\chatlog.txt
-// CRMP_USER_NICKNAME - Ваш никнейм
-// poz - Ваш позывной
-// Ниже можете ввести свою маску и должность, все отмечено комментариями
 // По желанию можете поменять бинды клавиш: ! - LAlt, ^-Ctrl
 
 ActiveID = 0
-way = C:\Users\ilusha\Desktop\PV GTA\amazing\chatlog.txt
-way = C:\Amazing Games\Amazing Online\PC\amazing\chatlog.txt
-global CRMP_USER_NICKNAME:="Vladislav_Shetkov"
-global poz:="Фантом"
-global dolz:="инспектор СР ДПС"
-global zvan:="старшина"
-global goska:="ГАИ"
+
+configPath := A_ScriptDir . "\config.ini"
+IniRead, way, %configPath%, Config, way, C:\Amazing Games\Amazing Online\PC\PC\amazing\chatlog.txt
+IniRead, CRMP_USER_NICKNAME, %configPath%, Config, CRMP_USER_NICKNAME, Vladislav_Shetkov
+IniRead, poz, %configPath%, Config, poz, Фантом
+IniRead, dolz, %configPath%, Config, dolz, инспектор СР ДПС
+IniRead, zvan, %configPath%, Config, zvan, прапорщик
+IniRead, goska, %configPath%, Config, goska, ГАИ
+
+global CRMP_USER_NICKNAME
+global poz
+global dolz
+global zvan
+global goska
 global strings=1
 
 
