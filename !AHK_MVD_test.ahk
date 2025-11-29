@@ -10,14 +10,13 @@
 
 ActiveID = 0
 way = C:\Users\ilusha\Desktop\PV GTA\amazing\chatlog.txt
-// way = C:\Amazing Games\Amazing Online\PC\amazing\chatlog.txt
+way = C:\Amazing Games\Amazing Online\PC\amazing\chatlog.txt
 global CRMP_USER_NICKNAME:="Vladislav_Shetkov"
-global poz:="Щетков"
-global dolz:="надзиратель ОРН"
+global poz:="Фантом"
+global dolz:="инспектор СР ДПС"
 global zvan:="старшина"
-global goska:="УФСИН"
+global goska:="ГАИ"
 global strings=1
-
 
 
 global cufffl
@@ -320,7 +319,7 @@ Return
 // Связаться в депортамент
 :?:!деп::
 SendMessage, 0x50,, 0x4190419,, A
-SendInput /d [%goska%/] Говорит %dolz% %zvan% %poz%.{left 100}{right 10}
+SendInput /d [%goska%/] Говорит %dolz% %zvan% %poz%.{left 100}{right 8}
 Return
 
 
