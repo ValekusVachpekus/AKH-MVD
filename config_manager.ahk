@@ -73,7 +73,7 @@ if (goska = "другое")
 }
 
 ; Формируем полный путь: way + \PC\amazing\chatlog.txt
-fullPath := way . "\PC\amazing\chatlog.txt"
+fullPath := way . "\amazing\chatlog.txt"
 
 IniWrite, %fullPath%, %configPath%, Config, way
 IniWrite, %nickname%, %configPath%, Config, CRMP_USER_NICKNAME
